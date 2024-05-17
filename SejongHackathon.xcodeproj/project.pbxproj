@@ -32,6 +32,8 @@
 		E4B1E7AB2BF74D1100ECADFA /* SejongHackathonUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7AA2BF74D1100ECADFA /* SejongHackathonUnitTests.swift */; };
 		E4B1E7B82BF74D1500ECADFA /* SejongHackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7B72BF74D1500ECADFA /* SejongHackathonUITests.swift */; };
 		E4B1E7BA2BF74D1500ECADFA /* SejongHackathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7B92BF74D1500ECADFA /* SejongHackathonUITestsLaunchTests.swift */; };
+		E4B1E7C32BF74DAA00ECADFA /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7C22BF74DAA00ECADFA /* DocumentViewController.swift */; };
+		E4B1E7C52BF74DCC00ECADFA /* DocumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7C42BF74DCC00ECADFA /* DocumentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		E4B1E7B52BF74D1500ECADFA /* SejongHackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SejongHackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B1E7B72BF74D1500ECADFA /* SejongHackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SejongHackathonUITests.swift; sourceTree = "<group>"; };
 		E4B1E7B92BF74D1500ECADFA /* SejongHackathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SejongHackathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4B1E7C22BF74DAA00ECADFA /* DocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
+		E4B1E7C42BF74DCC00ECADFA /* DocumentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 		E4B1E76F2BF7499400ECADFA /* Feat */ = {
 			isa = PBXGroup;
 			children = (
+				E4B1E7C12BF74D9900ECADFA /* Document */,
 				E4B1E7A32BF74CEB00ECADFA /* Main */,
 				E4B1E79E2BF74C3900ECADFA /* Auth */,
 			);
@@ -255,6 +260,15 @@
 				E4B1E7B92BF74D1500ECADFA /* SejongHackathonUITestsLaunchTests.swift */,
 			);
 			path = SejongHackathonUITests;
+			sourceTree = "<group>";
+		};
+		E4B1E7C12BF74D9900ECADFA /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1E7C22BF74DAA00ECADFA /* DocumentViewController.swift */,
+				E4B1E7C42BF74DCC00ECADFA /* DocumentViewModel.swift */,
+			);
+			path = Document;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,7 +423,9 @@
 				E4B1E7792BF74B7100ECADFA /* Network.swift in Sources */,
 				E4B1E7852BF74B7B00ECADFA /* LoginRequestModel.swift in Sources */,
 				E4B1E7782BF74B7100ECADFA /* LoginNetwork.swift in Sources */,
+				E4B1E7C32BF74DAA00ECADFA /* DocumentViewController.swift in Sources */,
 				E4B1E75C2BF7497700ECADFA /* MainViewController.swift in Sources */,
+				E4B1E7C52BF74DCC00ECADFA /* DocumentViewModel.swift in Sources */,
 				E4B1E77B2BF74B7100ECADFA /* URL.swift in Sources */,
 				E4B1E7582BF7497700ECADFA /* AppDelegate.swift in Sources */,
 				E4B1E79D2BF74C0900ECADFA /* LoginResponseModel.swift in Sources */,
