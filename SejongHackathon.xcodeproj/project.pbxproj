@@ -122,8 +122,8 @@
 		E4B1E76F2BF7499400ECADFA /* Feat */ = {
 			isa = PBXGroup;
 			children = (
+				E4B1E7A32BF74CEB00ECADFA /* Main */,
 				E4B1E79E2BF74C3900ECADFA /* Auth */,
-				E4B1E75B2BF7497700ECADFA /* MainViewController.swift */,
 			);
 			path = Feat;
 			sourceTree = "<group>";
@@ -187,6 +187,14 @@
 				E4B1E7A02BF74C3900ECADFA /* LoginViewController.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		E4B1E7A32BF74CEB00ECADFA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1E75B2BF7497700ECADFA /* MainViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
