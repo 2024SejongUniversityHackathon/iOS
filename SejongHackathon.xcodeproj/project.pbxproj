@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E4B1E7582BF7497700ECADFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7572BF7497700ECADFA /* AppDelegate.swift */; };
 		E4B1E75A2BF7497700ECADFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7592BF7497700ECADFA /* SceneDelegate.swift */; };
-		E4B1E75C2BF7497700ECADFA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E75B2BF7497700ECADFA /* MainViewController.swift */; };
+		E4B1E75C2BF7497700ECADFA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E75B2BF7497700ECADFA /* HomeViewController.swift */; };
 		E4B1E75F2BF7497700ECADFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B1E75D2BF7497700ECADFA /* Main.storyboard */; };
 		E4B1E7612BF7497900ECADFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B1E7602BF7497900ECADFA /* Assets.xcassets */; };
 		E4B1E7642BF7497900ECADFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B1E7622BF7497900ECADFA /* LaunchScreen.storyboard */; };
@@ -35,6 +35,13 @@
 		E4B1E7C32BF74DAA00ECADFA /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7C22BF74DAA00ECADFA /* DocumentViewController.swift */; };
 		E4B1E7C52BF74DCC00ECADFA /* DocumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7C42BF74DCC00ECADFA /* DocumentViewModel.swift */; };
 		E4B421522BF75B860040D4CB /* CareerNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421512BF75B860040D4CB /* CareerNetwork.swift */; };
+		E4B421572BF75D710040D4CB /* CareerServerRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421562BF75D710040D4CB /* CareerServerRequestModel.swift */; };
+		E4B421592BF75D7C0040D4CB /* CareerResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421582BF75D7C0040D4CB /* CareerResponseModel.swift */; };
+		E4B4215C2BF75E6C0040D4CB /* CareerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4215B2BF75E6C0040D4CB /* CareerViewController.swift */; };
+		E4B4215E2BF75E730040D4CB /* CareerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4215D2BF75E730040D4CB /* CareerViewModel.swift */; };
+		E4B421612BF7665E0040D4CB /* APIKEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421602BF7665E0040D4CB /* APIKEY.swift */; };
+		E4B421632BF770DE0040D4CB /* CareerServerResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421622BF770DE0040D4CB /* CareerServerResponseModel.swift */; };
+		E4B421652BF7715F0040D4CB /* CareerServerNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421642BF7715F0040D4CB /* CareerServerNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +65,7 @@
 		E4B1E7542BF7497700ECADFA /* SejongHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SejongHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B1E7572BF7497700ECADFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4B1E7592BF7497700ECADFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E4B1E75B2BF7497700ECADFA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E4B1E75B2BF7497700ECADFA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E4B1E75E2BF7497700ECADFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4B1E7602BF7497900ECADFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4B1E7632BF7497900ECADFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +87,13 @@
 		E4B1E7C22BF74DAA00ECADFA /* DocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 		E4B1E7C42BF74DCC00ECADFA /* DocumentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentViewModel.swift; sourceTree = "<group>"; };
 		E4B421512BF75B860040D4CB /* CareerNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerNetwork.swift; sourceTree = "<group>"; };
+		E4B421562BF75D710040D4CB /* CareerServerRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerServerRequestModel.swift; sourceTree = "<group>"; };
+		E4B421582BF75D7C0040D4CB /* CareerResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerResponseModel.swift; sourceTree = "<group>"; };
+		E4B4215B2BF75E6C0040D4CB /* CareerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerViewController.swift; sourceTree = "<group>"; };
+		E4B4215D2BF75E730040D4CB /* CareerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerViewModel.swift; sourceTree = "<group>"; };
+		E4B421602BF7665E0040D4CB /* APIKEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKEY.swift; sourceTree = "<group>"; };
+		E4B421622BF770DE0040D4CB /* CareerServerResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerServerResponseModel.swift; sourceTree = "<group>"; };
+		E4B421642BF7715F0040D4CB /* CareerServerNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerServerNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +154,7 @@
 			children = (
 				E4B1E7712BF749D400ECADFA /* SejongHackathon.entitlements */,
 				E4B1E7652BF7497900ECADFA /* Info.plist */,
+				E4B4215F2BF766560040D4CB /* Core */,
 				E4B1E7722BF74B7100ECADFA /* Network */,
 				E4B1E77C2BF74B7B00ECADFA /* Entity */,
 				E4B1E76F2BF7499400ECADFA /* Feat */,
@@ -171,8 +186,9 @@
 		E4B1E76F2BF7499400ECADFA /* Feat */ = {
 			isa = PBXGroup;
 			children = (
+				E4B4215A2BF75E620040D4CB /* Career */,
 				E4B1E7C12BF74D9900ECADFA /* Document */,
-				E4B1E7A32BF74CEB00ECADFA /* Main */,
+				E4B1E7A32BF74CEB00ECADFA /* Home */,
 				E4B1E79E2BF74C3900ECADFA /* Auth */,
 			);
 			path = Feat;
@@ -201,6 +217,7 @@
 		E4B1E77C2BF74B7B00ECADFA /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				E4B421532BF75D120040D4CB /* Career */,
 				E4B1E77D2BF74B7B00ECADFA /* Auth */,
 			);
 			path = Entity;
@@ -240,12 +257,12 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		E4B1E7A32BF74CEB00ECADFA /* Main */ = {
+		E4B1E7A32BF74CEB00ECADFA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E4B1E75B2BF7497700ECADFA /* MainViewController.swift */,
+				E4B1E75B2BF7497700ECADFA /* HomeViewController.swift */,
 			);
-			path = Main;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		E4B1E7A92BF74D1100ECADFA /* SejongHackathonUnitTests */ = {
@@ -278,8 +295,52 @@
 			isa = PBXGroup;
 			children = (
 				E4B421512BF75B860040D4CB /* CareerNetwork.swift */,
+				E4B421642BF7715F0040D4CB /* CareerServerNetwork.swift */,
 			);
 			path = Career;
+			sourceTree = "<group>";
+		};
+		E4B421532BF75D120040D4CB /* Career */ = {
+			isa = PBXGroup;
+			children = (
+				E4B421552BF75D1B0040D4CB /* Request */,
+				E4B421542BF75D160040D4CB /* Response */,
+			);
+			path = Career;
+			sourceTree = "<group>";
+		};
+		E4B421542BF75D160040D4CB /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				E4B421582BF75D7C0040D4CB /* CareerResponseModel.swift */,
+				E4B421622BF770DE0040D4CB /* CareerServerResponseModel.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		E4B421552BF75D1B0040D4CB /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E4B421562BF75D710040D4CB /* CareerServerRequestModel.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		E4B4215A2BF75E620040D4CB /* Career */ = {
+			isa = PBXGroup;
+			children = (
+				E4B4215B2BF75E6C0040D4CB /* CareerViewController.swift */,
+				E4B4215D2BF75E730040D4CB /* CareerViewModel.swift */,
+			);
+			path = Career;
+			sourceTree = "<group>";
+		};
+		E4B4215F2BF766560040D4CB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E4B421602BF7665E0040D4CB /* APIKEY.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,16 +495,23 @@
 				E4B1E7792BF74B7100ECADFA /* Network.swift in Sources */,
 				E4B1E7852BF74B7B00ECADFA /* LoginRequestModel.swift in Sources */,
 				E4B1E7782BF74B7100ECADFA /* LoginNetwork.swift in Sources */,
+				E4B421652BF7715F0040D4CB /* CareerServerNetwork.swift in Sources */,
+				E4B4215C2BF75E6C0040D4CB /* CareerViewController.swift in Sources */,
+				E4B421632BF770DE0040D4CB /* CareerServerResponseModel.swift in Sources */,
+				E4B421612BF7665E0040D4CB /* APIKEY.swift in Sources */,
 				E4B1E7C32BF74DAA00ECADFA /* DocumentViewController.swift in Sources */,
 				E4B421522BF75B860040D4CB /* CareerNetwork.swift in Sources */,
-				E4B1E75C2BF7497700ECADFA /* MainViewController.swift in Sources */,
+				E4B1E75C2BF7497700ECADFA /* HomeViewController.swift in Sources */,
+				E4B421592BF75D7C0040D4CB /* CareerResponseModel.swift in Sources */,
 				E4B1E7C52BF74DCC00ECADFA /* DocumentViewModel.swift in Sources */,
 				E4B1E77B2BF74B7100ECADFA /* URL.swift in Sources */,
 				E4B1E7582BF7497700ECADFA /* AppDelegate.swift in Sources */,
 				E4B1E79D2BF74C0900ECADFA /* LoginResponseModel.swift in Sources */,
 				E4B1E75A2BF7497700ECADFA /* SceneDelegate.swift in Sources */,
+				E4B421572BF75D710040D4CB /* CareerServerRequestModel.swift in Sources */,
 				E4B1E7A12BF74C3900ECADFA /* LoginViewModel.swift in Sources */,
 				E4B1E77A2BF74B7100ECADFA /* NetworkProvider.swift in Sources */,
+				E4B4215E2BF75E730040D4CB /* CareerViewModel.swift in Sources */,
 				E4B1E7A22BF74C3900ECADFA /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,4 +19,14 @@ final class NetworkProvider {
         let network = Network<LoginResponseModel>(endpoint)
         return LoginNetwork(network: network)
     }
+    //MARK: - 직업정보
+    public func careerNetwork() -> CareerNetwork {
+        let network = Network<CareerResponseModel>(endpoint)
+        return CareerNetwork(network: network)
+    }
+    //서버통신
+    public func careerServerNetwork() -> CareerServerNetwork {
+        let network = Network<CareerServerResponseModel>(endpoint)
+        return CareerServerNetwork(network: network)
+    }
 }

@@ -19,6 +19,7 @@ final class Network<T: Decodable> {
         self.endpoint = endpoint
         self.queue = ConcurrentDispatchQueueScheduler(qos: .background)
     }
+    //MARK: - General Get Method
     public func getNetwork(path : String) -> Observable<T> {
         let fullpath = "\(endpoint)\(path)"
         
@@ -50,5 +51,23 @@ final class Network<T: Decodable> {
             .map { data -> T in
                 return try JSONDecoder().decode(T.self, from: data)
             }
+    }
+    //MARK: - OpenAPI
+    public func OpenApiNetwork(path : String) -> Observable<[T]> {
+        let fullpath = "\(path)"
+        
+        return Observable.create { observer in
+            AF.request(fullpath, method: .get, headers: ["Contetn-Type":"application/json"])
+            .responseDecodable(of: T.self) { response in
+                switch response.result {
+                case .success(let data):
+                    observer.onNext([data])
+                    observer.onCompleted()
+                case .failure(let error):
+                    observer.onError(error)
+                }
+            }
+            return Disposables.create()
+        }
     }
 }

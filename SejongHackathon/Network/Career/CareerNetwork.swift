@@ -11,11 +11,12 @@ import RxSwift
 import RxCocoa
 
 final class CareerNetwork {
-    private let network : Network<Void>
-    init(network: Network<Void>) {
+    private let network : Network<CareerResponseModel>
+    init(network: Network<CareerResponseModel>) {
         self.network = network
     }
-    public func getCareer(paht: String) -> Observable<Void> {
-        return network.getNetwork(path: path)
+    public func getCareer(path: String, pageIndex : Int) -> Observable<[CareerResponseModel]> {
+        let fullpath = "\(path)?apiKey=\(APIKEY)&pageIndex=\(pageIndex)"
+        return network.OpenApiNetwork(path: fullpath)
     }
 }
