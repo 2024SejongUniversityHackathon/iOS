@@ -15,4 +15,10 @@ extension UIColor {
     static let shadowColor : UIColor = {
         return UIColor(named: "shadowColor") ?? .white
     }()
+    static let BackgroundColor : UIColor = {
+        return UIColor(named: "BackgroundColor") ?? .white
+    }()
+    static let BtnColor : UIColor = {
+        return UIColor(named: "BtnColor") ?? .white
+    }()
 }

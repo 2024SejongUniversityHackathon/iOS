@@ -54,6 +54,9 @@
 		E4B421862BF7A4240040D4CB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421852BF7A4240040D4CB /* HomeViewModel.swift */; };
 		E4B421882BF7AD220040D4CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B421872BF7AD220040D4CB /* LaunchScreen.storyboard */; };
 		E4B4218B2BF7B0250040D4CB /* splashImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4B4218A2BF7B0250040D4CB /* splashImage.jpg */; };
+		E4B4218D2BF7B2B00040D4CB /* OnboardingEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4218C2BF7B2B00040D4CB /* OnboardingEnd.swift */; };
+		E4B4218F2BF7B5310040D4CB /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4218E2BF7B5310040D4CB /* OnboardingViewModel.swift */; };
+		E4B421932BF7C6AC0040D4CB /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421922BF7C6AC0040D4CB /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,9 @@
 		E4B421852BF7A4240040D4CB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E4B421872BF7AD220040D4CB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4B4218A2BF7B0250040D4CB /* splashImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splashImage.jpg; sourceTree = "<group>"; };
+		E4B4218C2BF7B2B00040D4CB /* OnboardingEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEnd.swift; sourceTree = "<group>"; };
+		E4B4218E2BF7B5310040D4CB /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		E4B421922BF7C6AC0040D4CB /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +217,7 @@
 		E4B1E76F2BF7499400ECADFA /* Feat */ = {
 			isa = PBXGroup;
 			children = (
+				E4B421902BF7C6700040D4CB /* Category */,
 				E4B4217D2BF798CD0040D4CB /* Result */,
 				E4B421672BF7792C0040D4CB /* Onboarding */,
 				E4B4215A2BF75E620040D4CB /* Career */,
@@ -377,7 +384,9 @@
 		E4B421672BF7792C0040D4CB /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				E4B4218E2BF7B5310040D4CB /* OnboardingViewModel.swift */,
 				E4B4216A2BF77C860040D4CB /* OnboardingStart.swift */,
+				E4B4218C2BF7B2B00040D4CB /* OnboardingEnd.swift */,
 				E4B421702BF7895E0040D4CB /* OnboardingList */,
 			);
 			path = Onboarding;
@@ -424,6 +433,14 @@
 				E4B421802BF798DD0040D4CB /* ResultViewModel.swift */,
 			);
 			path = Result;
+			sourceTree = "<group>";
+		};
+		E4B421902BF7C6700040D4CB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E4B421922BF7C6AC0040D4CB /* CategoryViewController.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -580,6 +597,7 @@
 			files = (
 				E4B1E7792BF74B7100ECADFA /* Network.swift in Sources */,
 				E4B421812BF798DD0040D4CB /* ResultViewModel.swift in Sources */,
+				E4B421932BF7C6AC0040D4CB /* CategoryViewController.swift in Sources */,
 				E4B4217B2BF794720040D4CB /* Color + Extension.swift in Sources */,
 				E4B4217F2BF798D50040D4CB /* ResultViewController.swift in Sources */,
 				E4B1E7852BF74B7B00ECADFA /* LoginRequestModel.swift in Sources */,
@@ -597,6 +615,7 @@
 				E4B1E7C52BF74DCC00ECADFA /* DocumentViewModel.swift in Sources */,
 				E4B421692BF779390040D4CB /* Onboarding1.swift in Sources */,
 				E4B4216D2BF781AA0040D4CB /* QuestionFile.swift in Sources */,
+				E4B4218F2BF7B5310040D4CB /* OnboardingViewModel.swift in Sources */,
 				E4B1E77B2BF74B7100ECADFA /* URL.swift in Sources */,
 				E4B1E7582BF7497700ECADFA /* AppDelegate.swift in Sources */,
 				E4B1E79D2BF74C0900ECADFA /* LoginResponseModel.swift in Sources */,
@@ -609,6 +628,7 @@
 				E4B4215E2BF75E730040D4CB /* CareerViewModel.swift in Sources */,
 				E4B421862BF7A4240040D4CB /* HomeViewModel.swift in Sources */,
 				E4B1E7A22BF74C3900ECADFA /* LoginViewController.swift in Sources */,
+				E4B4218D2BF7B2B00040D4CB /* OnboardingEnd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
