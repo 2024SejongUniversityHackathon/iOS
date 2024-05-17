@@ -12,13 +12,20 @@ import RxCocoa
 final class DocumentViewModel {
     private let disposeBag = DisposeBag()
     //네트워크
-    
+    private var documentNetwork : DocumentNetwork
     
     //파일 업로드
-    let documentTrigger = PublishSubject<URL>()
-    let documentResult : PublishSubject<Void> = PublishSubject()
+    let documentTrigger = PublishSubject<DocumentRequestModel>()
+    let documentResult : PublishSubject<DocumentResponseModel> = PublishSubject()
     
     init() {
+        let provider = NetworkProvider(endpoint: endpointURL)
+        documentNetwork = provider.documentNetwork()
         
+        documentTrigger.flatMapLatest { data in
+            return self.documentNetwork.postAnswer(data: data.data, fileName: data.fileName)
+        }
+        .bind(to: documentResult)
+        .disposed(by: disposeBag)
     }
 }

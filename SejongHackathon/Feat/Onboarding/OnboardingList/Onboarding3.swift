@@ -13,6 +13,8 @@ import UIKit
 
 final class Onboarding3 : UIViewController {
     private let disposeBag = DisposeBag()
+    private let onboardingViewModel = OnboardingViewModel()
+    private var calculatedAnswer : [Int] = []
     var answerQueue : [OnboardingRequestModel]
     init(answerQueue: [OnboardingRequestModel]) {
         self.answerQueue = answerQueue
@@ -38,6 +40,7 @@ final class Onboarding3 : UIViewController {
         view.backgroundColor = .white
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
+        view.layer.masksToBounds = true
         return view
     }()
     private let questionStack : UIStackView = {
@@ -46,6 +49,7 @@ final class Onboarding3 : UIViewController {
         view.axis = .vertical
         view.spacing = 20
         view.distribution = .fill
+        view.layer.masksToBounds = true
         return view
     }()
     //답변
@@ -55,18 +59,27 @@ final class Onboarding3 : UIViewController {
         view.axis = .vertical
         view.spacing = 20
         view.distribution = .fill
+        view.layer.masksToBounds = true
         return view
     }()
     //버튼
     private let nextBtn : UIButton = {
         let btn = UIButton()
-        btn.setTitle("다음", for: .normal)
+        btn.setTitle("완료", for: .normal)
         btn.setTitleColor(.white, for: .normal)
         btn.layer.cornerRadius = 10
         btn.layer.masksToBounds = true
         btn.backgroundColor = .pointColor
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .heavy)
         return btn
+    }()
+    private let loadingIndicator : UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView()
+        view.style = .large
+        view.color = .gray
+        view.backgroundColor = .clear
+        view.clipsToBounds = true
+        return view
     }()
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -94,6 +107,8 @@ private extension Onboarding3 {
         scrollView.addSubview(questionStack)
         self.view.addSubview(scrollView)
         
+        self.view.addSubview(loadingIndicator)
+        
         progressView.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(30)
             make.top.equalToSuperview().inset(self.view.frame.height / 9)
@@ -114,10 +129,14 @@ private extension Onboarding3 {
             make.top.bottom.equalTo(scrollView)
             make.width.equalTo(scrollView)
         }
+        loadingIndicator.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.height.equalTo(50)
+        }
     }
 
     private func addQuestion() {
-        let answers = ["매우 싫음", "싫음", "보통", "좋음", "매우 좋음"]
+        let answers = ["1", "2", "3", "4", "5"]
         for index in 8..<13 {
             let view = UIView()
             view.backgroundColor = .white
@@ -192,8 +211,40 @@ private extension Onboarding3 {
     private func setBinding() {
         nextBtn.rx.tap.bind { [weak self] _ in
             guard let self = self else { return }
-            print(self.answerQueue)
-            self.navigationController?.pushViewController(OnboardingEnd(), animated: true)
+            if answerQueue.count == 13 {
+                //서버 저장
+                calculate()
+                onboardingViewModel.scoreTrigger.onNext(calculatedAnswer)
+                print("\(calculatedAnswer)")
+                loadingIndicator.startAnimating()
+                onboardingViewModel.scoreResult.bind { data in
+                    if data.header?.responseCode == 200 {
+                        self.loadingIndicator.stopAnimating()
+                        self.navigationController?.pushViewController(TabBarViewController(), animated: true)
+                    }
+                }.disposed(by: disposeBag)
+            }else{
+                showMessage("누락된 질문이 있습니다.")
+            }
         }.disposed(by: disposeBag)
+    }
+    private func showMessage(_ message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true)
+    }
+    private func calculate() {
+        let answerIndex = [3,2,2,2,2,2]
+        var flag = 0
+        var result = 0
+        let answer = answerQueue.compactMap { $0.answer }
+        for a in answerIndex {
+            result = 0
+            for index in flag...(flag+a-1) {
+                result += Int(answer[index]) ?? 0
+            }
+            calculatedAnswer.append(result)
+            flag += a
+        }
     }
 }

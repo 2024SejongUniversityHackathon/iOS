@@ -18,7 +18,6 @@ final class LoginViewModel : NSObject, ASAuthorizationControllerDelegate, ASAuth
     
     //애플 로그인
     let appleLoginTrigger = PublishSubject<Void>()
-    let appleLoginSuccess : PublishSubject<Void> = PublishSubject()
     
     //서버 로그인
     let serverLoginTrigger = PublishSubject<LoginRequestModel>()
@@ -43,15 +42,12 @@ final class LoginViewModel : NSObject, ASAuthorizationControllerDelegate, ASAuth
         }
         .bind(to: serverLoginResult)
         .disposed(by: disposeBag)
-        self.serverLoginResult.subscribe(onNext: {[weak self] result in
-            guard let self = self else{return}
-            if result.code == 200 {
-                if let accessToken = result.data?.accessToken,
-                   let refreshToken = result.data?.refreshToken{
+        self.serverLoginResult.subscribe(onNext: { result in
+            if result.body.data?.accessToken != nil {
+                if let accessToken = result.body.data?.accessToken{
                     KeychainWrapper.standard.removeAllKeys()
-                    KeychainWrapper.standard.set(accessToken, forKey: "JWTaccessToken")
-                    KeychainWrapper.standard.set(refreshToken, forKey: "JWTrefreshToken")
-                    self.appleLoginSuccess.onNext(())
+                    let JWTaccessToken = "Bearer \(accessToken)"
+                    KeychainWrapper.standard.set(JWTaccessToken, forKey: "JWTaccessToken")
                 }
             }
         })
@@ -69,11 +65,10 @@ final class LoginViewModel : NSObject, ASAuthorizationControllerDelegate, ASAuth
     }
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
-            if let code = appleIDCredential.authorizationCode?.base64EncodedString(),
-               let name = appleIDCredential.fullName?.givenName,
-               let idToken = appleIDCredential.identityToken?.base64EncodedString(){
+            if let code = appleIDCredential.authorizationCode?.base64EncodedString(){
+                let name = appleIDCredential.fullName?.givenName ?? "익명"
                 let email = appleIDCredential.email ?? "Permission@Denied"
-                self.serverLoginTrigger.onNext(LoginRequestModel(username: name, idToken: idToken, nickname: name, email: email, birthdate: "", socialId: code))
+                self.serverLoginTrigger.onNext(LoginRequestModel(username: name, email: email, authorizationCode: code))
             }
         }
     }

@@ -18,7 +18,7 @@ final class MypageViewController: UIViewController{
     //MARK: UI Components
     private let naviLogo : UILabel = {
         let label = UILabel()
-        label.text = "WADUDU"
+        label.text = "WADUDO"
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = .pointColor
         label.textAlignment = .left
@@ -62,15 +62,6 @@ final class MypageViewController: UIViewController{
         let btn = UIButton()
         btn.backgroundColor = .clear
         btn.setTitle("로그아웃", for: .normal)
-        btn.setTitleColor(.black, for: .normal)
-        btn.setTitleColor(.gray, for: .highlighted)
-        btn.configuration = .bordered()
-        return btn
-    }()
-    private let listBtn : UIButton = {
-        let btn = UIButton()
-        btn.backgroundColor = .clear
-        btn.setTitle("분석 기록", for: .normal)
         btn.setTitleColor(.black, for: .normal)
         btn.setTitleColor(.gray, for: .highlighted)
         btn.configuration = .bordered()
@@ -131,7 +122,6 @@ private extension MypageViewController {
         self.view.addSubview(emailLabel)
         self.view.addSubview(spacing)
         self.view.addSubview(logoutBtn)
-        self.view.addSubview(listBtn)
         self.view.addSubview(feedBackBtn)
         self.view.addSubview(vsLabel)
         
@@ -157,17 +147,12 @@ private extension MypageViewController {
         }
         logoutBtn.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(30)
-            make.top.equalTo(spacing.snp.bottom).offset(20)
-            make.height.equalTo(40)
-        }
-        listBtn.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview().inset(30)
-            make.top.equalTo(logoutBtn.snp.bottom).offset(20)
+            make.top.equalTo(spacing.snp.bottom).offset(40)
             make.height.equalTo(40)
         }
         feedBackBtn.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(30)
-            make.top.equalTo(listBtn.snp.bottom).offset(20)
+            make.top.equalTo(logoutBtn.snp.bottom).offset(30)
             make.height.equalTo(40)
         }
         vsLabel.snp.makeConstraints { make in

@@ -14,7 +14,7 @@ final class OnboardingEnd : UIViewController {
     private let image : UIImageView = {
         let view = UIImageView()
         view.backgroundColor = .clear
-        view.image = UIImage(named: "onboardingEndImage")
+        view.image = UIImage(named: "onboardingEndImage1")
         view.contentMode = .scaleAspectFit
         view.clipsToBounds = true
         return view

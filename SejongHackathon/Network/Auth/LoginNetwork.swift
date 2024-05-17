@@ -18,11 +18,10 @@ final class LoginNetwork {
     }
     public func getLogin(_ loginModel : LoginRequestModel) -> Observable<LoginResponseModel> {
         let params : [String:Any] = [
-            "socialId" : loginModel.socialId,
-            "nickname" : loginModel.nickname,
-            "email" : loginModel.email ?? "Permission@Denied",
-            "socialType" : ""
+            "username" : loginModel.username,
+            "email" : loginModel.email,
+            "authorizationCode" : loginModel.authorizationCode
         ]
-        return network.loginNetwork(path: "", params: params)
+        return network.loginNetwork(path: loginURL, params: params)
     }
 }

@@ -16,7 +16,7 @@ final class HomeViewController: UIViewController {
     //MARK: - UI Components
     private let naviLogo : UILabel = {
         let label = UILabel()
-        label.text = "WADUDU"
+        label.text = "WADUDO"
         label.textColor = .pointColor
         label.font = UIFont.boldSystemFont(ofSize: 20)
         return label
@@ -155,6 +155,10 @@ private extension HomeViewController {
         self.navigationController?.pushViewController(DocumentViewController(), animated: true)
     }
     @objc func resultBtnTapped() {
+        homeViewModel.completeTrigger.onNext(())
+        homeViewModel.completeResult.bind { data in
+            
+        }
         self.navigationController?.pushViewController(ResultViewController(), animated: true)
     }
 }

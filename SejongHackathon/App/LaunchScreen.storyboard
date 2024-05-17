@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PA1-SP-OE3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PA1-SP-OE3">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
@@ -44,7 +44,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splashImage.jpg" width="240" height="504"/>
+        <image name="mainImage.jpg" width="240" height="504"/>
         <namedColor name="PrimaryColor">
             <color red="0.84705882352941175" green="0.90588235294117647" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -27,6 +27,12 @@ final class LoginViewController: UIViewController {
         let btn = ASAuthorizationAppleIDButton(type: .signIn, style: .black)
         return btn
     }()
+    private let loadingIndicator : UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView()
+        view.style = .large
+        view.color = .gray
+        return view
+    }()
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationItem.hidesBackButton = true
@@ -47,6 +53,7 @@ private extension LoginViewController {
         self.view.backgroundColor = .white
         self.view.addSubview(image)
         self.view.addSubview(appleBtn)
+        self.view.addSubview(loadingIndicator)
         image.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
@@ -54,6 +61,10 @@ private extension LoginViewController {
             make.leading.trailing.equalToSuperview().inset(30)
             make.height.equalTo(50)
             make.bottom.equalToSuperview().inset(100)
+        }
+        loadingIndicator.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.height.equalTo(50)
         }
     }
 }
@@ -64,13 +75,17 @@ private extension LoginViewController{
             .subscribe(onNext: { [weak self] in
                 guard let self = self else{return}
                 self.loginViewModel.appleLoginTrigger.onNext(())
+                self.loadingIndicator.startAnimating()
             })
             .disposed(by: disposeBag)
-        loginViewModel.appleLoginSuccess
-            .subscribe(onNext: { [weak self] in
+        loginViewModel.serverLoginResult
+            .subscribe(onNext: { [weak self] data in
                 guard let self = self else{return}
-                DispatchQueue.main.async {
-                    self.navigationController?.pushViewController(TabBarViewController(), animated: true)
+                if (data.body.data?.accessToken) != nil {
+                    self.loadingIndicator.stopAnimating()
+                    DispatchQueue.main.async {
+                        self.navigationController?.pushViewController(TabBarViewController(), animated: true)
+                    }
                 }
             })
             .disposed(by: disposeBag)

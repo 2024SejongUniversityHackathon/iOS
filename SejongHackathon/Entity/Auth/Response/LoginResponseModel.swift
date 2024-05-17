@@ -7,12 +7,19 @@
 
 import Foundation
 struct LoginResponseModel : Codable {
-    let code : Int
-    let state : String
-    let message : String?
-    let data : LoginData?
+    let header : loginHeader?
+    let body : loginBody
 }
-struct LoginData : Codable {
-    let accessToken : String
-    let refreshToken : String
+struct loginHeader : Codable {
+    let responseCode : Int?
+    let status : String?
+    let message : String?
+}
+struct loginBody : Codable {
+    let data : loginData?
+}
+struct loginData : Codable {
+    let grantType : String?
+    let accessToken : String?
+    let accessTokenExpiresIn : Double?
 }

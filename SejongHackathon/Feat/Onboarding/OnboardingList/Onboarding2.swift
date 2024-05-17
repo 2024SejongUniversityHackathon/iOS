@@ -116,7 +116,7 @@ private extension Onboarding2 {
     }
 
     private func addQuestion() {
-        let answers = ["매우 싫음", "싫음", "보통", "좋음", "매우 좋음"]
+        let answers = ["1", "2", "3", "4", "5"]
         for index in 4..<8 {
             let view = UIView()
             view.backgroundColor = .white
@@ -191,7 +191,16 @@ private extension Onboarding2 {
     private func setBinding() {
         nextBtn.rx.tap.bind { [weak self] _ in
             guard let self = self else { return }
-            self.navigationController?.pushViewController(Onboarding3(answerQueue: answerQueue), animated: true)
+            if answerQueue.count == 8 {
+                self.navigationController?.pushViewController(Onboarding3(answerQueue: self.answerQueue), animated: true)
+            }else{
+                showMessage("누락된 질문이 있습니다!")
+            }
         }.disposed(by: disposeBag)
+    }
+    private func showMessage(_ message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true)
     }
 }
