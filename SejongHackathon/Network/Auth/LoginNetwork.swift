@@ -21,7 +21,7 @@ final class LoginNetwork {
             "socialId" : loginModel.socialId,
             "nickname" : loginModel.nickname,
             "email" : loginModel.email ?? "Permission@Denied",
-            "socialType" : loginModel.socialType
+            "socialType" : ""
         ]
         return network.loginNetwork(path: "", params: params)
     }

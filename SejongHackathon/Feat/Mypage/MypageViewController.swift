@@ -29,7 +29,7 @@ final class MypageViewController: UIViewController{
         let view = UIImageView()
         view.backgroundColor = .white
         view.contentMode = .scaleAspectFit
-        view.image = UIImage(systemName: "person.circle.fill")
+        view.image = UIImage(named: "mypagePerson")
         view.tintColor = .BackgroundColor
         return view
     }()
@@ -88,7 +88,7 @@ final class MypageViewController: UIViewController{
     private let vsLabel : UITextView = {
         let label = UITextView()
         label.backgroundColor = .white
-        label.text = "WADUDU v 1.0.0\nMade by Baduk Stone"
+        label.text = "WADUDU v 1.0.0\nMade by Team.BadukStone"
         label.textColor = .gray
         label.font = UIFont.systemFont(ofSize: 13)
         label.textAlignment = .center
@@ -113,7 +113,6 @@ extension MypageViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationItem.hidesBackButton = false
-        self.tabBarController?.tabBar.isHidden = true
     }
     private func setNavigation() {
         self.title = "마이페이지"

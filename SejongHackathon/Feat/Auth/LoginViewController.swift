@@ -70,7 +70,7 @@ private extension LoginViewController{
             .subscribe(onNext: { [weak self] in
                 guard let self = self else{return}
                 DispatchQueue.main.async {
-//                    self.navigationController?.pushViewController(TabBarViewController(), animated: true)
+                    self.navigationController?.pushViewController(TabBarViewController(), animated: true)
                 }
             })
             .disposed(by: disposeBag)
