@@ -113,6 +113,7 @@ extension MypageViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationItem.hidesBackButton = false
+        self.tabBarController?.tabBar.isHidden = true
     }
     private func setNavigation() {
         self.title = "마이페이지"

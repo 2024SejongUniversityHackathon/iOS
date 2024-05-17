@@ -193,7 +193,7 @@ private extension Onboarding3 {
         nextBtn.rx.tap.bind { [weak self] _ in
             guard let self = self else { return }
             print(self.answerQueue)
-//            self.navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: <#T##Bool#>)
+            self.navigationController?.pushViewController(OnboardingEnd(), animated: true)
         }.disposed(by: disposeBag)
     }
 }
