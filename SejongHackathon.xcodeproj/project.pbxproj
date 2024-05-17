@@ -34,6 +34,7 @@
 		E4B1E7BA2BF74D1500ECADFA /* SejongHackathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7B92BF74D1500ECADFA /* SejongHackathonUITestsLaunchTests.swift */; };
 		E4B1E7C32BF74DAA00ECADFA /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7C22BF74DAA00ECADFA /* DocumentViewController.swift */; };
 		E4B1E7C52BF74DCC00ECADFA /* DocumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7C42BF74DCC00ECADFA /* DocumentViewModel.swift */; };
+		E4B421522BF75B860040D4CB /* CareerNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421512BF75B860040D4CB /* CareerNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		E4B1E7B92BF74D1500ECADFA /* SejongHackathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SejongHackathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E4B1E7C22BF74DAA00ECADFA /* DocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 		E4B1E7C42BF74DCC00ECADFA /* DocumentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentViewModel.swift; sourceTree = "<group>"; };
+		E4B421512BF75B860040D4CB /* CareerNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,10 +181,11 @@
 		E4B1E7722BF74B7100ECADFA /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				E4B1E7732BF74B7100ECADFA /* Auth */,
+				E4B1E7772BF74B7100ECADFA /* URL.swift */,
 				E4B1E7752BF74B7100ECADFA /* Network.swift */,
 				E4B1E7762BF74B7100ECADFA /* NetworkProvider.swift */,
-				E4B1E7772BF74B7100ECADFA /* URL.swift */,
+				E4B421502BF75B650040D4CB /* Career */,
+				E4B1E7732BF74B7100ECADFA /* Auth */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -269,6 +272,14 @@
 				E4B1E7C42BF74DCC00ECADFA /* DocumentViewModel.swift */,
 			);
 			path = Document;
+			sourceTree = "<group>";
+		};
+		E4B421502BF75B650040D4CB /* Career */ = {
+			isa = PBXGroup;
+			children = (
+				E4B421512BF75B860040D4CB /* CareerNetwork.swift */,
+			);
+			path = Career;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,6 +435,7 @@
 				E4B1E7852BF74B7B00ECADFA /* LoginRequestModel.swift in Sources */,
 				E4B1E7782BF74B7100ECADFA /* LoginNetwork.swift in Sources */,
 				E4B1E7C32BF74DAA00ECADFA /* DocumentViewController.swift in Sources */,
+				E4B421522BF75B860040D4CB /* CareerNetwork.swift in Sources */,
 				E4B1E75C2BF7497700ECADFA /* MainViewController.swift in Sources */,
 				E4B1E7C52BF74DCC00ECADFA /* DocumentViewModel.swift in Sources */,
 				E4B1E77B2BF74B7100ECADFA /* URL.swift in Sources */,
