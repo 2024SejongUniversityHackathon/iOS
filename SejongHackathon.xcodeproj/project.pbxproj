@@ -42,6 +42,11 @@
 		E4B421612BF7665E0040D4CB /* APIKEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421602BF7665E0040D4CB /* APIKEY.swift */; };
 		E4B421632BF770DE0040D4CB /* CareerServerResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421622BF770DE0040D4CB /* CareerServerResponseModel.swift */; };
 		E4B421652BF7715F0040D4CB /* CareerServerNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421642BF7715F0040D4CB /* CareerServerNetwork.swift */; };
+		E4B421692BF779390040D4CB /* Onboarding1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421682BF779390040D4CB /* Onboarding1.swift */; };
+		E4B4216B2BF77C860040D4CB /* OnboardingStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4216A2BF77C860040D4CB /* OnboardingStart.swift */; };
+		E4B4216D2BF781AA0040D4CB /* QuestionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4216C2BF781AA0040D4CB /* QuestionFile.swift */; };
+		E4B4216F2BF7890C0040D4CB /* Onboarding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4216E2BF7890C0040D4CB /* Onboarding2.swift */; };
+		E4B421722BF789C70040D4CB /* Onboarding3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421712BF789C70040D4CB /* Onboarding3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +99,11 @@
 		E4B421602BF7665E0040D4CB /* APIKEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKEY.swift; sourceTree = "<group>"; };
 		E4B421622BF770DE0040D4CB /* CareerServerResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerServerResponseModel.swift; sourceTree = "<group>"; };
 		E4B421642BF7715F0040D4CB /* CareerServerNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerServerNetwork.swift; sourceTree = "<group>"; };
+		E4B421682BF779390040D4CB /* Onboarding1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1.swift; sourceTree = "<group>"; };
+		E4B4216A2BF77C860040D4CB /* OnboardingStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStart.swift; sourceTree = "<group>"; };
+		E4B4216C2BF781AA0040D4CB /* QuestionFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFile.swift; sourceTree = "<group>"; };
+		E4B4216E2BF7890C0040D4CB /* Onboarding2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2.swift; sourceTree = "<group>"; };
+		E4B421712BF789C70040D4CB /* Onboarding3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +196,7 @@
 		E4B1E76F2BF7499400ECADFA /* Feat */ = {
 			isa = PBXGroup;
 			children = (
+				E4B421672BF7792C0040D4CB /* Onboarding */,
 				E4B4215A2BF75E620040D4CB /* Career */,
 				E4B1E7C12BF74D9900ECADFA /* Document */,
 				E4B1E7A32BF74CEB00ECADFA /* Home */,
@@ -339,8 +350,28 @@
 			isa = PBXGroup;
 			children = (
 				E4B421602BF7665E0040D4CB /* APIKEY.swift */,
+				E4B4216C2BF781AA0040D4CB /* QuestionFile.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		E4B421672BF7792C0040D4CB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E4B4216A2BF77C860040D4CB /* OnboardingStart.swift */,
+				E4B421702BF7895E0040D4CB /* OnboardingList */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E4B421702BF7895E0040D4CB /* OnboardingList */ = {
+			isa = PBXGroup;
+			children = (
+				E4B421682BF779390040D4CB /* Onboarding1.swift */,
+				E4B4216E2BF7890C0040D4CB /* Onboarding2.swift */,
+				E4B421712BF789C70040D4CB /* Onboarding3.swift */,
+			);
+			path = OnboardingList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,6 +527,7 @@
 				E4B1E7852BF74B7B00ECADFA /* LoginRequestModel.swift in Sources */,
 				E4B1E7782BF74B7100ECADFA /* LoginNetwork.swift in Sources */,
 				E4B421652BF7715F0040D4CB /* CareerServerNetwork.swift in Sources */,
+				E4B421722BF789C70040D4CB /* Onboarding3.swift in Sources */,
 				E4B4215C2BF75E6C0040D4CB /* CareerViewController.swift in Sources */,
 				E4B421632BF770DE0040D4CB /* CareerServerResponseModel.swift in Sources */,
 				E4B421612BF7665E0040D4CB /* APIKEY.swift in Sources */,
@@ -504,13 +536,17 @@
 				E4B1E75C2BF7497700ECADFA /* HomeViewController.swift in Sources */,
 				E4B421592BF75D7C0040D4CB /* CareerResponseModel.swift in Sources */,
 				E4B1E7C52BF74DCC00ECADFA /* DocumentViewModel.swift in Sources */,
+				E4B421692BF779390040D4CB /* Onboarding1.swift in Sources */,
+				E4B4216D2BF781AA0040D4CB /* QuestionFile.swift in Sources */,
 				E4B1E77B2BF74B7100ECADFA /* URL.swift in Sources */,
 				E4B1E7582BF7497700ECADFA /* AppDelegate.swift in Sources */,
 				E4B1E79D2BF74C0900ECADFA /* LoginResponseModel.swift in Sources */,
+				E4B4216B2BF77C860040D4CB /* OnboardingStart.swift in Sources */,
 				E4B1E75A2BF7497700ECADFA /* SceneDelegate.swift in Sources */,
 				E4B421572BF75D710040D4CB /* CareerServerRequestModel.swift in Sources */,
 				E4B1E7A12BF74C3900ECADFA /* LoginViewModel.swift in Sources */,
 				E4B1E77A2BF74B7100ECADFA /* NetworkProvider.swift in Sources */,
+				E4B4216F2BF7890C0040D4CB /* Onboarding2.swift in Sources */,
 				E4B4215E2BF75E730040D4CB /* CareerViewModel.swift in Sources */,
 				E4B1E7A22BF74C3900ECADFA /* LoginViewController.swift in Sources */,
 			);
