@@ -13,6 +13,22 @@
 		E4B1E75F2BF7497700ECADFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B1E75D2BF7497700ECADFA /* Main.storyboard */; };
 		E4B1E7612BF7497900ECADFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B1E7602BF7497900ECADFA /* Assets.xcassets */; };
 		E4B1E7642BF7497900ECADFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B1E7622BF7497900ECADFA /* LaunchScreen.storyboard */; };
+		E4B1E7782BF74B7100ECADFA /* LoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7742BF74B7100ECADFA /* LoginNetwork.swift */; };
+		E4B1E7792BF74B7100ECADFA /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7752BF74B7100ECADFA /* Network.swift */; };
+		E4B1E77A2BF74B7100ECADFA /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7762BF74B7100ECADFA /* NetworkProvider.swift */; };
+		E4B1E77B2BF74B7100ECADFA /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7772BF74B7100ECADFA /* URL.swift */; };
+		E4B1E7852BF74B7B00ECADFA /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7822BF74B7B00ECADFA /* LoginRequestModel.swift */; };
+		E4B1E7882BF74BA900ECADFA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E4B1E7872BF74BA900ECADFA /* Alamofire */; };
+		E4B1E78B2BF74BB200ECADFA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E4B1E78A2BF74BB200ECADFA /* Kingfisher */; };
+		E4B1E78E2BF74BC400ECADFA /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E4B1E78D2BF74BC400ECADFA /* RxAlamofire */; };
+		E4B1E7912BF74BD200ECADFA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E4B1E7902BF74BD200ECADFA /* RxCocoa */; };
+		E4B1E7932BF74BD200ECADFA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = E4B1E7922BF74BD200ECADFA /* RxRelay */; };
+		E4B1E7952BF74BD300ECADFA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E4B1E7942BF74BD300ECADFA /* RxSwift */; };
+		E4B1E7982BF74BDE00ECADFA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E4B1E7972BF74BDE00ECADFA /* SnapKit */; };
+		E4B1E79B2BF74BED00ECADFA /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = E4B1E79A2BF74BED00ECADFA /* SwiftKeychainWrapper */; };
+		E4B1E79D2BF74C0900ECADFA /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E79C2BF74C0900ECADFA /* LoginResponseModel.swift */; };
+		E4B1E7A12BF74C3900ECADFA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E79F2BF74C3900ECADFA /* LoginViewModel.swift */; };
+		E4B1E7A22BF74C3900ECADFA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7A02BF74C3900ECADFA /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +41,14 @@
 		E4B1E7632BF7497900ECADFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4B1E7652BF7497900ECADFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B1E7712BF749D400ECADFA /* SejongHackathon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SejongHackathon.entitlements; sourceTree = "<group>"; };
+		E4B1E7742BF74B7100ECADFA /* LoginNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetwork.swift; sourceTree = "<group>"; };
+		E4B1E7752BF74B7100ECADFA /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E4B1E7762BF74B7100ECADFA /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		E4B1E7772BF74B7100ECADFA /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		E4B1E7822BF74B7B00ECADFA /* LoginRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
+		E4B1E79C2BF74C0900ECADFA /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
+		E4B1E79F2BF74C3900ECADFA /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E4B1E7A02BF74C3900ECADFA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +56,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B1E7952BF74BD300ECADFA /* RxSwift in Frameworks */,
+				E4B1E7932BF74BD200ECADFA /* RxRelay in Frameworks */,
+				E4B1E78E2BF74BC400ECADFA /* RxAlamofire in Frameworks */,
+				E4B1E7982BF74BDE00ECADFA /* SnapKit in Frameworks */,
+				E4B1E78B2BF74BB200ECADFA /* Kingfisher in Frameworks */,
+				E4B1E7912BF74BD200ECADFA /* RxCocoa in Frameworks */,
+				E4B1E79B2BF74BED00ECADFA /* SwiftKeychainWrapper in Frameworks */,
+				E4B1E7882BF74BA900ECADFA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +91,9 @@
 			children = (
 				E4B1E7712BF749D400ECADFA /* SejongHackathon.entitlements */,
 				E4B1E7652BF7497900ECADFA /* Info.plist */,
-				E4B1E7702BF7499800ECADFA /* Entity */,
+				E4B1E7722BF74B7100ECADFA /* Network */,
+				E4B1E77C2BF74B7B00ECADFA /* Entity */,
 				E4B1E76F2BF7499400ECADFA /* Feat */,
-				E4B1E76E2BF7499000ECADFA /* Network */,
 				E4B1E76C2BF7498300ECADFA /* App */,
 				E4B1E75D2BF7497700ECADFA /* Main.storyboard */,
 			);
@@ -87,26 +119,74 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
-		E4B1E76E2BF7499000ECADFA /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		E4B1E76F2BF7499400ECADFA /* Feat */ = {
 			isa = PBXGroup;
 			children = (
+				E4B1E79E2BF74C3900ECADFA /* Auth */,
 				E4B1E75B2BF7497700ECADFA /* MainViewController.swift */,
 			);
 			path = Feat;
 			sourceTree = "<group>";
 		};
-		E4B1E7702BF7499800ECADFA /* Entity */ = {
+		E4B1E7722BF74B7100ECADFA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				E4B1E7732BF74B7100ECADFA /* Auth */,
+				E4B1E7752BF74B7100ECADFA /* Network.swift */,
+				E4B1E7762BF74B7100ECADFA /* NetworkProvider.swift */,
+				E4B1E7772BF74B7100ECADFA /* URL.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E4B1E7732BF74B7100ECADFA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1E7742BF74B7100ECADFA /* LoginNetwork.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E4B1E77C2BF74B7B00ECADFA /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1E77D2BF74B7B00ECADFA /* Auth */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		E4B1E77D2BF74B7B00ECADFA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1E77E2BF74B7B00ECADFA /* Response */,
+				E4B1E7812BF74B7B00ECADFA /* Request */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E4B1E77E2BF74B7B00ECADFA /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1E79C2BF74C0900ECADFA /* LoginResponseModel.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		E4B1E7812BF74B7B00ECADFA /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1E7822BF74B7B00ECADFA /* LoginRequestModel.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		E4B1E79E2BF74C3900ECADFA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1E79F2BF74C3900ECADFA /* LoginViewModel.swift */,
+				E4B1E7A02BF74C3900ECADFA /* LoginViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +205,16 @@
 			dependencies = (
 			);
 			name = SejongHackathon;
+			packageProductDependencies = (
+				E4B1E7872BF74BA900ECADFA /* Alamofire */,
+				E4B1E78A2BF74BB200ECADFA /* Kingfisher */,
+				E4B1E78D2BF74BC400ECADFA /* RxAlamofire */,
+				E4B1E7902BF74BD200ECADFA /* RxCocoa */,
+				E4B1E7922BF74BD200ECADFA /* RxRelay */,
+				E4B1E7942BF74BD300ECADFA /* RxSwift */,
+				E4B1E7972BF74BDE00ECADFA /* SnapKit */,
+				E4B1E79A2BF74BED00ECADFA /* SwiftKeychainWrapper */,
+			);
 			productName = SejongHackathon;
 			productReference = E4B1E7542BF7497700ECADFA /* SejongHackathon.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +243,14 @@
 				Base,
 			);
 			mainGroup = E4B1E74B2BF7497700ECADFA;
+			packageReferences = (
+				E4B1E7862BF74BA900ECADFA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E4B1E7892BF74BB200ECADFA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E4B1E78C2BF74BC400ECADFA /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+				E4B1E78F2BF74BD200ECADFA /* XCRemoteSwiftPackageReference "RxSwift" */,
+				E4B1E7962BF74BDE00ECADFA /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E4B1E7992BF74BED00ECADFA /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = E4B1E7552BF7497700ECADFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -180,9 +278,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B1E7792BF74B7100ECADFA /* Network.swift in Sources */,
+				E4B1E7852BF74B7B00ECADFA /* LoginRequestModel.swift in Sources */,
+				E4B1E7782BF74B7100ECADFA /* LoginNetwork.swift in Sources */,
 				E4B1E75C2BF7497700ECADFA /* MainViewController.swift in Sources */,
+				E4B1E77B2BF74B7100ECADFA /* URL.swift in Sources */,
 				E4B1E7582BF7497700ECADFA /* AppDelegate.swift in Sources */,
+				E4B1E79D2BF74C0900ECADFA /* LoginResponseModel.swift in Sources */,
 				E4B1E75A2BF7497700ECADFA /* SceneDelegate.swift in Sources */,
+				E4B1E7A12BF74C3900ECADFA /* LoginViewModel.swift in Sources */,
+				E4B1E77A2BF74B7100ECADFA /* NetworkProvider.swift in Sources */,
+				E4B1E7A22BF74C3900ECADFA /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +508,100 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4B1E7862BF74BA900ECADFA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E4B1E7892BF74BB200ECADFA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		E4B1E78C2BF74BC400ECADFA /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		E4B1E78F2BF74BD200ECADFA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		E4B1E7962BF74BDE00ECADFA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E4B1E7992BF74BED00ECADFA /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4B1E7872BF74BA900ECADFA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4B1E7862BF74BA900ECADFA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E4B1E78A2BF74BB200ECADFA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4B1E7892BF74BB200ECADFA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		E4B1E78D2BF74BC400ECADFA /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4B1E78C2BF74BC400ECADFA /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+		E4B1E7902BF74BD200ECADFA /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4B1E78F2BF74BD200ECADFA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E4B1E7922BF74BD200ECADFA /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4B1E78F2BF74BD200ECADFA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		E4B1E7942BF74BD300ECADFA /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4B1E78F2BF74BD200ECADFA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		E4B1E7972BF74BDE00ECADFA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4B1E7962BF74BDE00ECADFA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		E4B1E79A2BF74BED00ECADFA /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4B1E7992BF74BED00ECADFA /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E4B1E74C2BF7497700ECADFA /* Project object */;
 }
