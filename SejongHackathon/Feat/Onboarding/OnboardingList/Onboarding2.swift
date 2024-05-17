@@ -28,6 +28,7 @@ final class Onboarding2 : UIViewController {
         view.layer.cornerRadius = 10
         view.layer.masksToBounds = true
         view.progress = Float(CGFloat(0.5))
+        view.tintColor = .pointColor
         return view
     }()
     //질문
@@ -62,7 +63,8 @@ final class Onboarding2 : UIViewController {
         btn.setTitleColor(.white, for: .normal)
         btn.layer.cornerRadius = 10
         btn.layer.masksToBounds = true
-        btn.backgroundColor = .systemBlue
+        btn.backgroundColor = .pointColor
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .heavy)
         return btn
     }()
     override func viewWillAppear(_ animated: Bool) {
@@ -135,14 +137,22 @@ private extension Onboarding2 {
                 btn.layer.cornerRadius = 15
                 btn.layer.masksToBounds = true
                 btn.setTitleColor(.black, for: .normal)
-                btn.backgroundColor = .lightGray
+                btn.backgroundColor = .shadowColor
                 btn.titleLabel?.font = UIFont.systemFont(ofSize: 12, weight: .light)
                 btn.rx.tap.bind { [weak self] _ in
                     guard let self = self else { return }
                     // 버튼의 색상 변경
-                    btn.backgroundColor = .systemBlue
+                    btn.backgroundColor = .pointColor
                     btn.setTitleColor(.white, for: .normal)
-                    
+                    btn.titleLabel?.font = UIFont.systemFont(ofSize: 12, weight: .heavy)
+                    // 클릭한 버튼 이외의 다른 버튼 색상 원래대로 변경
+                    for subview in answerStack.arrangedSubviews {
+                        if let otherButton = subview as? UIButton, otherButton != btn {
+                            otherButton.backgroundColor = .shadowColor
+                            otherButton.setTitleColor(.black, for: .normal)
+                            otherButton.titleLabel?.font = UIFont.systemFont(ofSize: 12, weight: .light)
+                        }
+                    }
                     // 버튼의 타이틀 가져오기
                     guard let buttonText = btn.titleLabel?.text else { return }
                     

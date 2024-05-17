@@ -27,7 +27,10 @@ class DocumentViewController: UIViewController, UIDocumentPickerDelegate {
     private let uploadBtn : UIButton = {
         let btn = UIButton()
         btn.setTitle("PDF 업로드", for: .normal)
-        btn.configuration = .bordered()
+        btn.backgroundColor = .pointColor
+        btn.layer.cornerRadius = 10
+        btn.layer.masksToBounds = true
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .heavy)
         return btn
     }()
     
@@ -56,7 +59,7 @@ private extension DocumentViewController {
         uploadBtn.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(30)
             make.bottom.equalToSuperview().inset(self.view.frame.height / 8)
-            make.height.equalTo(40)
+            make.height.equalTo(50)
         }
         
     }

@@ -49,7 +49,7 @@ final class OnboardingStart : UIViewController{
         btn.setTitleColor(.white, for: .normal)
         btn.layer.cornerRadius = 10
         btn.layer.masksToBounds = true
-        btn.backgroundColor = .systemBlue
+        btn.backgroundColor = .pointColor
         return btn
     }()
     
