@@ -94,9 +94,10 @@ final class HomeViewController: UIViewController {
 private extension HomeViewController {
     private func setNavigation() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: naviLogo)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.BackgroundColor]
     }
     private func setLayout() {
-        self.title = ""
+        self.title = "메인페이지"
         self.view.backgroundColor = .white
         
         let View = UIView()

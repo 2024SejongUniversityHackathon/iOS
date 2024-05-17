@@ -57,6 +57,9 @@
 		E4B4218D2BF7B2B00040D4CB /* OnboardingEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4218C2BF7B2B00040D4CB /* OnboardingEnd.swift */; };
 		E4B4218F2BF7B5310040D4CB /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4218E2BF7B5310040D4CB /* OnboardingViewModel.swift */; };
 		E4B421932BF7C6AC0040D4CB /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421922BF7C6AC0040D4CB /* CategoryViewController.swift */; };
+		E4B421962BF7C77C0040D4CB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421952BF7C77C0040D4CB /* TabBarViewController.swift */; };
+		E4B421992BF7C8950040D4CB /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421982BF7C8950040D4CB /* MypageViewController.swift */; };
+		E4B4219B2BF7C8980040D4CB /* MypageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4219A2BF7C8980040D4CB /* MypageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +126,9 @@
 		E4B4218C2BF7B2B00040D4CB /* OnboardingEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEnd.swift; sourceTree = "<group>"; };
 		E4B4218E2BF7B5310040D4CB /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		E4B421922BF7C6AC0040D4CB /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		E4B421952BF7C77C0040D4CB /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E4B421982BF7C8950040D4CB /* MypageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		E4B4219A2BF7C8980040D4CB /* MypageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MypageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +223,8 @@
 		E4B1E76F2BF7499400ECADFA /* Feat */ = {
 			isa = PBXGroup;
 			children = (
+				E4B421972BF7C86D0040D4CB /* Mypage */,
+				E4B421942BF7C7750040D4CB /* TabBar */,
 				E4B421902BF7C6700040D4CB /* Category */,
 				E4B4217D2BF798CD0040D4CB /* Result */,
 				E4B421672BF7792C0040D4CB /* Onboarding */,
@@ -443,6 +451,23 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		E4B421942BF7C7750040D4CB /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E4B421952BF7C77C0040D4CB /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E4B421972BF7C86D0040D4CB /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				E4B4219A2BF7C8980040D4CB /* MypageViewModel.swift */,
+				E4B421982BF7C8950040D4CB /* MypageViewController.swift */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -613,6 +638,7 @@
 				E4B1E75C2BF7497700ECADFA /* HomeViewController.swift in Sources */,
 				E4B421592BF75D7C0040D4CB /* CareerResponseModel.swift in Sources */,
 				E4B1E7C52BF74DCC00ECADFA /* DocumentViewModel.swift in Sources */,
+				E4B421962BF7C77C0040D4CB /* TabBarViewController.swift in Sources */,
 				E4B421692BF779390040D4CB /* Onboarding1.swift in Sources */,
 				E4B4216D2BF781AA0040D4CB /* QuestionFile.swift in Sources */,
 				E4B4218F2BF7B5310040D4CB /* OnboardingViewModel.swift in Sources */,
@@ -621,6 +647,8 @@
 				E4B1E79D2BF74C0900ECADFA /* LoginResponseModel.swift in Sources */,
 				E4B4216B2BF77C860040D4CB /* OnboardingStart.swift in Sources */,
 				E4B1E75A2BF7497700ECADFA /* SceneDelegate.swift in Sources */,
+				E4B421992BF7C8950040D4CB /* MypageViewController.swift in Sources */,
+				E4B4219B2BF7C8980040D4CB /* MypageViewModel.swift in Sources */,
 				E4B421572BF75D710040D4CB /* CareerServerRequestModel.swift in Sources */,
 				E4B1E7A12BF74C3900ECADFA /* LoginViewModel.swift in Sources */,
 				E4B1E77A2BF74B7100ECADFA /* NetworkProvider.swift in Sources */,
