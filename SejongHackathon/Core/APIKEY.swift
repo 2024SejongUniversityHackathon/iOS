@@ -7,5 +7,4 @@
 
 import Foundation
 
-//MARK: - APIKEY
 let APIKEY : String = ""
