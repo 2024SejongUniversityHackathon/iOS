@@ -35,8 +35,19 @@ final class NetworkProvider {
         return DocumentNetwork(network: network)
     }
     //MARK: - 점수
+    //보내기
     public func scoreNetwork() -> ScoreNetwork {
         let network = Network<ScoreResponseModel>(endpoint)
         return ScoreNetwork(network: network)
+    }
+    //가져오기
+    public func resultNetwork() -> ResultNetwork {
+        let network = Network<ResultResponseModel>(endpoint)
+        return ResultNetwork(network: network)
+    }
+    //MARK: - 완료
+    public func homeNetwork() -> HomeNetwork {
+        let network = Network<HomeResponseModel>(endpoint)
+        return HomeNetwork(network: network)
     }
 }

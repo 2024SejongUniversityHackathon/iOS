@@ -16,14 +16,14 @@ import DGCharts
 
 final class ResultViewController : UIViewController {
     private let disposeBag = DisposeBag()
-    
+    private let resultViewModel = ResultViewModel()
     //MARK: - UI Components
     private let chart : RadarChartView = {
         let view = RadarChartView()
         view.isUserInteractionEnabled = false
         view.backgroundColor = .white
         view.contentMode = .scaleAspectFill
-        let xLabels = ["I", "R", "A", "S", "E", "C"]
+        let xLabels = ["R", "I", "A", "S", "E", "C"]
         view.xAxis.valueFormatter = IndexAxisValueFormatter(values: xLabels)
         view.xAxis.labelFont = UIFont.systemFont(ofSize: 13)
         view.clipsToBounds = true
@@ -32,9 +32,12 @@ final class ResultViewController : UIViewController {
     private let titleText : UITextView = {
         let view = UITextView()
         view.isUserInteractionEnabled = false
-        view.isScrollEnabled = false
+        view.isScrollEnabled = true
         view.textAlignment = .left
         view.isEditable = false
+        view.showsVerticalScrollIndicator = false
+        view.showsHorizontalScrollIndicator = false
+        
         let attributedText = NSMutableAttributedString()
         
         let largeFont = UIFont.systemFont(ofSize: 24, weight: .bold)
@@ -42,7 +45,7 @@ final class ResultViewController : UIViewController {
             .font: largeFont,
             .foregroundColor: UIColor.black
         ]
-        let largeText = NSAttributedString(string: "큰 텍스트\n\n", attributes: largeTextAttributes)
+        let largeText = NSAttributedString(string: "문승재씨의 Ai추천 직무는 회계사, 물리학연구원, 블록체인전문가입니다.\n\n", attributes: largeTextAttributes)
         attributedText.append(largeText)
         
         let mediumFont = UIFont.systemFont(ofSize: 18, weight: .medium)
@@ -50,7 +53,7 @@ final class ResultViewController : UIViewController {
             .font: mediumFont,
             .foregroundColor: UIColor.darkGray
         ]
-        let mediumText = NSAttributedString(string: "중간 크기 텍스트\n", attributes: mediumTextAttributes)
+        let mediumText = NSAttributedString(string: "너의 진로 희망은 블록체인 전문가군! 그렇다면 네 생기부를 블록체인 분야에 관련된 경험과 지식을 강조하여 조정하는 것이 좋겠어. 예를 들어, 학교나 커뮤니티에서 블록체인 기술에 대한 프로젝트나 활동에 참여한 경험을 강조할 수 있어. 또한 블록체인에 대한 관심을 나타내는 활동이나 자격증 취득, 관련 공부를 했다면 그것들도 넣어보는 것도 좋을 거야. 블록체인 분야에서 경험과 지식을 쌓는 것이 네 진로에 도움이 될 거니까, 그런 부분들을 부각시키는 것이 중요할 거야!\n", attributes: mediumTextAttributes)
         attributedText.append(mediumText)
         
         view.attributedText = attributedText
@@ -89,18 +92,18 @@ private extension ResultViewController {
             make.top.equalToSuperview().inset(40)
             make.height.equalToSuperview().dividedBy(2.3)
         }
-        setChart()
     }
-    private func setChart() {
+    private func setChart(_ data : RIASECData) {
+        
         let entries = [
-            RadarChartDataEntry(value: 4),
-            RadarChartDataEntry(value: 3),
-            RadarChartDataEntry(value: 2),
-            RadarChartDataEntry(value: 5),
-            RadarChartDataEntry(value: 4),
-            RadarChartDataEntry(value: 4)
+            RadarChartDataEntry(value: Double(data.r)),
+            RadarChartDataEntry(value: Double(data.i)),
+            RadarChartDataEntry(value: Double(data.a)),
+            RadarChartDataEntry(value: Double(data.s)),
+            RadarChartDataEntry(value: Double(data.e)),
+            RadarChartDataEntry(value: Double(data.c))
         ]
-        let dataSet = RadarChartDataSet(entries: entries, label: "육각형 그래프")
+        let dataSet = RadarChartDataSet(entries: entries, label: "RIASEC")
         dataSet.colors = [NSUIColor.systemBlue]
         dataSet.fillColor = NSUIColor.systemBlue
         dataSet.drawFilledEnabled = true
@@ -112,6 +115,13 @@ private extension ResultViewController {
 //MARK: - Binding
 private extension ResultViewController {
     private func setBinding() {
-        
+        resultViewModel.resultTrigger.onNext(())
+        resultViewModel.result.bind { data in
+            DispatchQueue.main.async {
+                if let chartData = data.body?.data {
+                    self.setChart(chartData)
+                }
+            }
+        }.disposed(by: disposeBag)
     }
 }

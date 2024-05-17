@@ -20,7 +20,8 @@ let loginURL : String = "/login/oauth2/code/apple"
 let documentURL : String = "/api/documents/uploadPdf"
 
 //MARK: - 완료
-let completeURL : String = "/members/{memberId}/check"
+let completeURL : String = "/member/check"
 
 //MARK: - 점수
-let scoreURL : String = "/scores"
+let scoreURL : String = "/scores" //보내기
+let getScoreURL : String = "/my-scores" //가져오기

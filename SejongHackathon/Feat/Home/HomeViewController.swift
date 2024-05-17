@@ -157,8 +157,18 @@ private extension HomeViewController {
     @objc func resultBtnTapped() {
         homeViewModel.completeTrigger.onNext(())
         homeViewModel.completeResult.bind { data in
-            
-        }
-        self.navigationController?.pushViewController(ResultViewController(), animated: true)
+            DispatchQueue.main.async {
+                if data.body?.data == true {
+                    self.navigationController?.pushViewController(ResultViewController(), animated: true)
+                }else{
+                    self.showMessage("성격검사/생활기록부 등록을 모두 완료 필수!")
+                }
+            }
+        }.disposed(by: disposeBag)
+    }
+    private func showMessage(_ message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true)
     }
 }

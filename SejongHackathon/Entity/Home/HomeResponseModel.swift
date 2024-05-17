@@ -16,8 +16,5 @@ struct HomeHeader : Codable {
     let meessage : String?
 }
 struct HomeBody : Codable {
-    let data : homeData?
-}
-struct homeData : Codable {
-    
+    let data : Bool?
 }

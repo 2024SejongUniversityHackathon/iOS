@@ -67,6 +67,8 @@
 		E4B421AE2BF7F0C20040D4CB /* ScoreNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421AD2BF7F0C20040D4CB /* ScoreNetwork.swift */; };
 		E4B421B32BF7F1100040D4CB /* ScoreResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421B22BF7F1100040D4CB /* ScoreResponseModel.swift */; };
 		E4B421B62BF809620040D4CB /* HomeResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421B52BF809620040D4CB /* HomeResponseModel.swift */; };
+		E4B421BC2BF812490040D4CB /* ResultResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421BB2BF812490040D4CB /* ResultResponseModel.swift */; };
+		E4B421BF2BF813050040D4CB /* ResultNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421BE2BF813050040D4CB /* ResultNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +145,8 @@
 		E4B421AD2BF7F0C20040D4CB /* ScoreNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreNetwork.swift; sourceTree = "<group>"; };
 		E4B421B22BF7F1100040D4CB /* ScoreResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreResponseModel.swift; sourceTree = "<group>"; };
 		E4B421B52BF809620040D4CB /* HomeResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseModel.swift; sourceTree = "<group>"; };
+		E4B421BB2BF812490040D4CB /* ResultResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultResponseModel.swift; sourceTree = "<group>"; };
+		E4B421BE2BF813050040D4CB /* ResultNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +260,7 @@
 				E4B1E7772BF74B7100ECADFA /* URL.swift */,
 				E4B1E7752BF74B7100ECADFA /* Network.swift */,
 				E4B1E7762BF74B7100ECADFA /* NetworkProvider.swift */,
+				E4B421BD2BF812F70040D4CB /* Result */,
 				E4B421AC2BF7F0A70040D4CB /* Score */,
 				E4B421A92BF7EF8E0040D4CB /* Home */,
 				E4B421A12BF7DC920040D4CB /* Document */,
@@ -276,6 +281,7 @@
 		E4B1E77C2BF74B7B00ECADFA /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				E4B421BA2BF8123E0040D4CB /* Result */,
 				E4B421B42BF809590040D4CB /* Home */,
 				E4B421AF2BF7F0FA0040D4CB /* Score */,
 				E4B4219C2BF7DC260040D4CB /* Document */,
@@ -569,6 +575,22 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		E4B421BA2BF8123E0040D4CB /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				E4B421BB2BF812490040D4CB /* ResultResponseModel.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		E4B421BD2BF812F70040D4CB /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				E4B421BE2BF813050040D4CB /* ResultNetwork.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -743,8 +765,10 @@
 				E4B421592BF75D7C0040D4CB /* CareerResponseModel.swift in Sources */,
 				E4B1E7C52BF74DCC00ECADFA /* DocumentViewModel.swift in Sources */,
 				E4B421962BF7C77C0040D4CB /* TabBarViewController.swift in Sources */,
+				E4B421BC2BF812490040D4CB /* ResultResponseModel.swift in Sources */,
 				E4B421692BF779390040D4CB /* Onboarding1.swift in Sources */,
 				E4B4216D2BF781AA0040D4CB /* QuestionFile.swift in Sources */,
+				E4B421BF2BF813050040D4CB /* ResultNetwork.swift in Sources */,
 				E4B4218F2BF7B5310040D4CB /* OnboardingViewModel.swift in Sources */,
 				E4B1E77B2BF74B7100ECADFA /* URL.swift in Sources */,
 				E4B421A02BF7DC470040D4CB /* DocumentResponseModel.swift in Sources */,
