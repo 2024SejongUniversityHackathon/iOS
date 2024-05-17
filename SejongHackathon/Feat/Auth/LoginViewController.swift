@@ -18,8 +18,9 @@ final class LoginViewController: UIViewController {
     private let image : UIImageView = {
         let view = UIImageView()
         view.backgroundColor = .clear
-//        view.image = UIImage(named: "Splash")
+        view.image = UIImage(named: "loginImage")
         view.contentMode = .scaleAspectFit
+        view.clipsToBounds = true
         return view
     }()
     private let appleBtn : ASAuthorizationAppleIDButton = {
@@ -47,7 +48,7 @@ private extension LoginViewController {
         self.view.addSubview(image)
         self.view.addSubview(appleBtn)
         image.snp.makeConstraints { make in
-            make.leading.trailing.top.bottom.equalToSuperview().inset(0)
+            make.edges.equalToSuperview()
         }
         appleBtn.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(30)

@@ -10,9 +10,7 @@
 		E4B1E7582BF7497700ECADFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7572BF7497700ECADFA /* AppDelegate.swift */; };
 		E4B1E75A2BF7497700ECADFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7592BF7497700ECADFA /* SceneDelegate.swift */; };
 		E4B1E75C2BF7497700ECADFA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E75B2BF7497700ECADFA /* HomeViewController.swift */; };
-		E4B1E75F2BF7497700ECADFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B1E75D2BF7497700ECADFA /* Main.storyboard */; };
 		E4B1E7612BF7497900ECADFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B1E7602BF7497900ECADFA /* Assets.xcassets */; };
-		E4B1E7642BF7497900ECADFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B1E7622BF7497900ECADFA /* LaunchScreen.storyboard */; };
 		E4B1E7782BF74B7100ECADFA /* LoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7742BF74B7100ECADFA /* LoginNetwork.swift */; };
 		E4B1E7792BF74B7100ECADFA /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7752BF74B7100ECADFA /* Network.swift */; };
 		E4B1E77A2BF74B7100ECADFA /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7762BF74B7100ECADFA /* NetworkProvider.swift */; };
@@ -54,6 +52,8 @@
 		E4B421812BF798DD0040D4CB /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421802BF798DD0040D4CB /* ResultViewModel.swift */; };
 		E4B421842BF799C50040D4CB /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E4B421832BF799C50040D4CB /* DGCharts */; };
 		E4B421862BF7A4240040D4CB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421852BF7A4240040D4CB /* HomeViewModel.swift */; };
+		E4B421882BF7AD220040D4CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B421872BF7AD220040D4CB /* LaunchScreen.storyboard */; };
+		E4B4218B2BF7B0250040D4CB /* splashImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4B4218A2BF7B0250040D4CB /* splashImage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,9 +78,7 @@
 		E4B1E7572BF7497700ECADFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4B1E7592BF7497700ECADFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E4B1E75B2BF7497700ECADFA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		E4B1E75E2BF7497700ECADFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4B1E7602BF7497900ECADFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E4B1E7632BF7497900ECADFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4B1E7652BF7497900ECADFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B1E7712BF749D400ECADFA /* SejongHackathon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SejongHackathon.entitlements; sourceTree = "<group>"; };
 		E4B1E7742BF74B7100ECADFA /* LoginNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetwork.swift; sourceTree = "<group>"; };
@@ -117,6 +115,8 @@
 		E4B4217E2BF798D50040D4CB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		E4B421802BF798DD0040D4CB /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
 		E4B421852BF7A4240040D4CB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E4B421872BF7AD220040D4CB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4B4218A2BF7B0250040D4CB /* splashImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splashImage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +183,6 @@
 				E4B1E77C2BF74B7B00ECADFA /* Entity */,
 				E4B1E76F2BF7499400ECADFA /* Feat */,
 				E4B1E76C2BF7498300ECADFA /* App */,
-				E4B1E75D2BF7497700ECADFA /* Main.storyboard */,
 			);
 			path = SejongHackathon;
 			sourceTree = "<group>";
@@ -191,7 +190,8 @@
 		E4B1E76C2BF7498300ECADFA /* App */ = {
 			isa = PBXGroup;
 			children = (
-				E4B1E7622BF7497900ECADFA /* LaunchScreen.storyboard */,
+				E4B4218A2BF7B0250040D4CB /* splashImage.jpg */,
+				E4B421872BF7AD220040D4CB /* LaunchScreen.storyboard */,
 				E4B1E7602BF7497900ECADFA /* Assets.xcassets */,
 				E4B421782BF794540040D4CB /* Color.xcassets */,
 				E4B1E76D2BF7498700ECADFA /* Delegate */,
@@ -550,10 +550,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4B1E7642BF7497900ECADFA /* LaunchScreen.storyboard in Resources */,
+				E4B4218B2BF7B0250040D4CB /* splashImage.jpg in Resources */,
 				E4B421792BF794540040D4CB /* Color.xcassets in Resources */,
+				E4B421882BF7AD220040D4CB /* LaunchScreen.storyboard in Resources */,
 				E4B1E7612BF7497900ECADFA /* Assets.xcassets in Resources */,
-				E4B1E75F2BF7497700ECADFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,25 +643,6 @@
 			targetProxy = E4B1E7BB2BF74D1500ECADFA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E4B1E75D2BF7497700ECADFA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E4B1E75E2BF7497700ECADFA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E4B1E7622BF7497900ECADFA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E4B1E7632BF7497900ECADFA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E4B1E7662BF7497900ECADFA /* Debug */ = {
@@ -790,7 +771,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SejongHackathon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
@@ -819,7 +800,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SejongHackathon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
