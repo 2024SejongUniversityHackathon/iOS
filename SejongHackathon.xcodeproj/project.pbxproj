@@ -53,6 +53,7 @@
 		E4B4217F2BF798D50040D4CB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4217E2BF798D50040D4CB /* ResultViewController.swift */; };
 		E4B421812BF798DD0040D4CB /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421802BF798DD0040D4CB /* ResultViewModel.swift */; };
 		E4B421842BF799C50040D4CB /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E4B421832BF799C50040D4CB /* DGCharts */; };
+		E4B421862BF7A4240040D4CB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421852BF7A4240040D4CB /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		E4B4217A2BF794720040D4CB /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
 		E4B4217E2BF798D50040D4CB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		E4B421802BF798DD0040D4CB /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		E4B421852BF7A4240040D4CB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				E4B1E75B2BF7497700ECADFA /* HomeViewController.swift */,
+				E4B421852BF7A4240040D4CB /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				E4B1E77A2BF74B7100ECADFA /* NetworkProvider.swift in Sources */,
 				E4B4216F2BF7890C0040D4CB /* Onboarding2.swift in Sources */,
 				E4B4215E2BF75E730040D4CB /* CareerViewModel.swift in Sources */,
+				E4B421862BF7A4240040D4CB /* HomeViewModel.swift in Sources */,
 				E4B1E7A22BF74C3900ECADFA /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

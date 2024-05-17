@@ -13,7 +13,7 @@ import PDFKit
 import RxSwift
 import UniformTypeIdentifiers
 
-class DocumentViewController: UIViewController, UIDocumentPickerDelegate {
+final class DocumentViewController: UIViewController, UIDocumentPickerDelegate {
     private let disposeBag = DisposeBag()
     private let documentViewModel = DocumentViewModel()
     //MARK: - UI Components
