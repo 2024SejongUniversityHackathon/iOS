@@ -29,7 +29,27 @@
 		E4B1E79D2BF74C0900ECADFA /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E79C2BF74C0900ECADFA /* LoginResponseModel.swift */; };
 		E4B1E7A12BF74C3900ECADFA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E79F2BF74C3900ECADFA /* LoginViewModel.swift */; };
 		E4B1E7A22BF74C3900ECADFA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7A02BF74C3900ECADFA /* LoginViewController.swift */; };
+		E4B1E7AB2BF74D1100ECADFA /* SejongHackathonUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7AA2BF74D1100ECADFA /* SejongHackathonUnitTests.swift */; };
+		E4B1E7B82BF74D1500ECADFA /* SejongHackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7B72BF74D1500ECADFA /* SejongHackathonUITests.swift */; };
+		E4B1E7BA2BF74D1500ECADFA /* SejongHackathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1E7B92BF74D1500ECADFA /* SejongHackathonUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4B1E7AC2BF74D1100ECADFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4B1E74C2BF7497700ECADFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B1E7532BF7497700ECADFA;
+			remoteInfo = SejongHackathon;
+		};
+		E4B1E7BB2BF74D1500ECADFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4B1E74C2BF7497700ECADFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B1E7532BF7497700ECADFA;
+			remoteInfo = SejongHackathon;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E4B1E7542BF7497700ECADFA /* SejongHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SejongHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +69,11 @@
 		E4B1E79C2BF74C0900ECADFA /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
 		E4B1E79F2BF74C3900ECADFA /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E4B1E7A02BF74C3900ECADFA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E4B1E7A82BF74D1100ECADFA /* SejongHackathonUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SejongHackathonUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B1E7AA2BF74D1100ECADFA /* SejongHackathonUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SejongHackathonUnitTests.swift; sourceTree = "<group>"; };
+		E4B1E7B52BF74D1500ECADFA /* SejongHackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SejongHackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B1E7B72BF74D1500ECADFA /* SejongHackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SejongHackathonUITests.swift; sourceTree = "<group>"; };
+		E4B1E7B92BF74D1500ECADFA /* SejongHackathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SejongHackathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +92,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4B1E7A52BF74D1100ECADFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B1E7B22BF74D1500ECADFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				E4B1E7562BF7497700ECADFA /* SejongHackathon */,
+				E4B1E7A92BF74D1100ECADFA /* SejongHackathonUnitTests */,
+				E4B1E7B62BF74D1500ECADFA /* SejongHackathonUITests */,
 				E4B1E7552BF7497700ECADFA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				E4B1E7542BF7497700ECADFA /* SejongHackathon.app */,
+				E4B1E7A82BF74D1100ECADFA /* SejongHackathonUnitTests.xctest */,
+				E4B1E7B52BF74D1500ECADFA /* SejongHackathonUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,6 +240,23 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		E4B1E7A92BF74D1100ECADFA /* SejongHackathonUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1E7AA2BF74D1100ECADFA /* SejongHackathonUnitTests.swift */,
+			);
+			path = SejongHackathonUnitTests;
+			sourceTree = "<group>";
+		};
+		E4B1E7B62BF74D1500ECADFA /* SejongHackathonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4B1E7B72BF74D1500ECADFA /* SejongHackathonUITests.swift */,
+				E4B1E7B92BF74D1500ECADFA /* SejongHackathonUITestsLaunchTests.swift */,
+			);
+			path = SejongHackathonUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +287,42 @@
 			productReference = E4B1E7542BF7497700ECADFA /* SejongHackathon.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E4B1E7A72BF74D1100ECADFA /* SejongHackathonUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B1E7AE2BF74D1100ECADFA /* Build configuration list for PBXNativeTarget "SejongHackathonUnitTests" */;
+			buildPhases = (
+				E4B1E7A42BF74D1100ECADFA /* Sources */,
+				E4B1E7A52BF74D1100ECADFA /* Frameworks */,
+				E4B1E7A62BF74D1100ECADFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4B1E7AD2BF74D1100ECADFA /* PBXTargetDependency */,
+			);
+			name = SejongHackathonUnitTests;
+			productName = SejongHackathonUnitTests;
+			productReference = E4B1E7A82BF74D1100ECADFA /* SejongHackathonUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4B1E7B42BF74D1500ECADFA /* SejongHackathonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B1E7BD2BF74D1500ECADFA /* Build configuration list for PBXNativeTarget "SejongHackathonUITests" */;
+			buildPhases = (
+				E4B1E7B12BF74D1500ECADFA /* Sources */,
+				E4B1E7B22BF74D1500ECADFA /* Frameworks */,
+				E4B1E7B32BF74D1500ECADFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4B1E7BC2BF74D1500ECADFA /* PBXTargetDependency */,
+			);
+			name = SejongHackathonUITests;
+			productName = SejongHackathonUITests;
+			productReference = E4B1E7B52BF74D1500ECADFA /* SejongHackathonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -239,6 +335,14 @@
 				TargetAttributes = {
 					E4B1E7532BF7497700ECADFA = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					E4B1E7A72BF74D1100ECADFA = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E4B1E7532BF7497700ECADFA;
+					};
+					E4B1E7B42BF74D1500ECADFA = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E4B1E7532BF7497700ECADFA;
 					};
 				};
 			};
@@ -264,6 +368,8 @@
 			projectRoot = "";
 			targets = (
 				E4B1E7532BF7497700ECADFA /* SejongHackathon */,
+				E4B1E7A72BF74D1100ECADFA /* SejongHackathonUnitTests */,
+				E4B1E7B42BF74D1500ECADFA /* SejongHackathonUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,6 +382,20 @@
 				E4B1E7642BF7497900ECADFA /* LaunchScreen.storyboard in Resources */,
 				E4B1E7612BF7497900ECADFA /* Assets.xcassets in Resources */,
 				E4B1E75F2BF7497700ECADFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B1E7A62BF74D1100ECADFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B1E7B32BF74D1500ECADFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +420,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4B1E7A42BF74D1100ECADFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B1E7AB2BF74D1100ECADFA /* SejongHackathonUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B1E7B12BF74D1500ECADFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B1E7BA2BF74D1500ECADFA /* SejongHackathonUITestsLaunchTests.swift in Sources */,
+				E4B1E7B82BF74D1500ECADFA /* SejongHackathonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4B1E7AD2BF74D1100ECADFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4B1E7532BF7497700ECADFA /* SejongHackathon */;
+			targetProxy = E4B1E7AC2BF74D1100ECADFA /* PBXContainerItemProxy */;
+		};
+		E4B1E7BC2BF74D1500ECADFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4B1E7532BF7497700ECADFA /* SejongHackathon */;
+			targetProxy = E4B1E7BB2BF74D1500ECADFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E4B1E75D2BF7497700ECADFA /* Main.storyboard */ = {
@@ -494,6 +644,84 @@
 			};
 			name = Release;
 		};
+		E4B1E7AF2BF74D1100ECADFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q653PU93R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WEDLE.SejongHackathonUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SejongHackathon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SejongHackathon";
+			};
+			name = Debug;
+		};
+		E4B1E7B02BF74D1100ECADFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q653PU93R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WEDLE.SejongHackathonUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SejongHackathon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SejongHackathon";
+			};
+			name = Release;
+		};
+		E4B1E7BE2BF74D1500ECADFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q653PU93R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WEDLE.SejongHackathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SejongHackathon;
+			};
+			name = Debug;
+		};
+		E4B1E7BF2BF74D1500ECADFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q653PU93R6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WEDLE.SejongHackathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SejongHackathon;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -511,6 +739,24 @@
 			buildConfigurations = (
 				E4B1E7692BF7497900ECADFA /* Debug */,
 				E4B1E76A2BF7497900ECADFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B1E7AE2BF74D1100ECADFA /* Build configuration list for PBXNativeTarget "SejongHackathonUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B1E7AF2BF74D1100ECADFA /* Debug */,
+				E4B1E7B02BF74D1100ECADFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B1E7BD2BF74D1500ECADFA /* Build configuration list for PBXNativeTarget "SejongHackathonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B1E7BE2BF74D1500ECADFA /* Debug */,
+				E4B1E7BF2BF74D1500ECADFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
