@@ -28,7 +28,7 @@ final class OnboardingStart : UIViewController{
             .font: largeFont,
             .foregroundColor: UIColor.black
         ]
-        let largeText = NSAttributedString(string: "큰 텍스트\n\n", attributes: largeTextAttributes)
+        let largeText = NSAttributedString(string: "청소년 직업흥미검사\n\n", attributes: largeTextAttributes)
         attributedText.append(largeText)
         
         let mediumFont = UIFont.systemFont(ofSize: 18, weight: .medium)
@@ -36,7 +36,7 @@ final class OnboardingStart : UIViewController{
             .font: mediumFont,
             .foregroundColor: UIColor.darkGray
         ]
-        let mediumText = NSAttributedString(string: "중간 크기 텍스트\n", attributes: mediumTextAttributes)
+        let mediumText = NSAttributedString(string: "직업 세계 탐색\n청소년의 진로 결정\n", attributes: mediumTextAttributes)
         attributedText.append(mediumText)
         
         view.attributedText = attributedText
