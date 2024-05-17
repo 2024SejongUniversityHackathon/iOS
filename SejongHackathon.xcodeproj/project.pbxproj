@@ -50,6 +50,9 @@
 		E4B421772BF790AA0040D4CB /* OnboardingRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421762BF790AA0040D4CB /* OnboardingRequestModel.swift */; };
 		E4B421792BF794540040D4CB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B421782BF794540040D4CB /* Color.xcassets */; };
 		E4B4217B2BF794720040D4CB /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4217A2BF794720040D4CB /* Color + Extension.swift */; };
+		E4B4217F2BF798D50040D4CB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4217E2BF798D50040D4CB /* ResultViewController.swift */; };
+		E4B421812BF798DD0040D4CB /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421802BF798DD0040D4CB /* ResultViewModel.swift */; };
+		E4B421842BF799C50040D4CB /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = E4B421832BF799C50040D4CB /* DGCharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +113,8 @@
 		E4B421762BF790AA0040D4CB /* OnboardingRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRequestModel.swift; sourceTree = "<group>"; };
 		E4B421782BF794540040D4CB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		E4B4217A2BF794720040D4CB /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
+		E4B4217E2BF798D50040D4CB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		E4B421802BF798DD0040D4CB /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +129,7 @@
 				E4B1E78B2BF74BB200ECADFA /* Kingfisher in Frameworks */,
 				E4B1E7912BF74BD200ECADFA /* RxCocoa in Frameworks */,
 				E4B1E79B2BF74BED00ECADFA /* SwiftKeychainWrapper in Frameworks */,
+				E4B421842BF799C50040D4CB /* DGCharts in Frameworks */,
 				E4B1E7882BF74BA900ECADFA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +209,7 @@
 		E4B1E76F2BF7499400ECADFA /* Feat */ = {
 			isa = PBXGroup;
 			children = (
+				E4B4217D2BF798CD0040D4CB /* Result */,
 				E4B421672BF7792C0040D4CB /* Onboarding */,
 				E4B4215A2BF75E620040D4CB /* Career */,
 				E4B1E7C12BF74D9900ECADFA /* Document */,
@@ -407,6 +414,15 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		E4B4217D2BF798CD0040D4CB /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				E4B4217E2BF798D50040D4CB /* ResultViewController.swift */,
+				E4B421802BF798DD0040D4CB /* ResultViewModel.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -432,6 +448,7 @@
 				E4B1E7942BF74BD300ECADFA /* RxSwift */,
 				E4B1E7972BF74BDE00ECADFA /* SnapKit */,
 				E4B1E79A2BF74BED00ECADFA /* SwiftKeychainWrapper */,
+				E4B421832BF799C50040D4CB /* DGCharts */,
 			);
 			productName = SejongHackathon;
 			productReference = E4B1E7542BF7497700ECADFA /* SejongHackathon.app */;
@@ -512,6 +529,7 @@
 				E4B1E78F2BF74BD200ECADFA /* XCRemoteSwiftPackageReference "RxSwift" */,
 				E4B1E7962BF74BDE00ECADFA /* XCRemoteSwiftPackageReference "SnapKit" */,
 				E4B1E7992BF74BED00ECADFA /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				E4B421822BF799C50040D4CB /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = E4B1E7552BF7497700ECADFA /* Products */;
 			projectDirPath = "";
@@ -558,7 +576,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B1E7792BF74B7100ECADFA /* Network.swift in Sources */,
+				E4B421812BF798DD0040D4CB /* ResultViewModel.swift in Sources */,
 				E4B4217B2BF794720040D4CB /* Color + Extension.swift in Sources */,
+				E4B4217F2BF798D50040D4CB /* ResultViewController.swift in Sources */,
 				E4B1E7852BF74B7B00ECADFA /* LoginRequestModel.swift in Sources */,
 				E4B1E7782BF74B7100ECADFA /* LoginNetwork.swift in Sources */,
 				E4B421652BF7715F0040D4CB /* CareerServerNetwork.swift in Sources */,
@@ -980,6 +1000,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		E4B421822BF799C50040D4CB /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1022,6 +1050,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E4B1E7992BF74BED00ECADFA /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
+		};
+		E4B421832BF799C50040D4CB /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4B421822BF799C50040D4CB /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
