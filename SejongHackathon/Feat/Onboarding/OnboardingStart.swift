@@ -70,6 +70,7 @@ final class OnboardingStart : UIViewController{
 //MARK: - UI Layout
 private extension OnboardingStart {
     private func setLayout() {
+        self.title = ""
         self.view.backgroundColor = .white
         self.view.addSubview(titleText)
         self.view.addSubview(nextBtn)

@@ -13,6 +13,14 @@ import UIKit
 
 final class Onboarding3 : UIViewController {
     private let disposeBag = DisposeBag()
+    var answerQueue : [OnboardingRequestModel]
+    init(answerQueue: [OnboardingRequestModel]) {
+        self.answerQueue = answerQueue
+        super.init(nibName: nil, bundle: nil)
+    }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     //MARK: - UI Components
     private let progressView : UIProgressView = {
@@ -20,7 +28,7 @@ final class Onboarding3 : UIViewController {
         view.backgroundColor = .clear
         view.layer.cornerRadius = 10
         view.layer.masksToBounds = true
-        view.progress = Float(CGFloat(1.0))
+        view.progress = Float(CGFloat(0.9))
         return view
     }()
     //질문
@@ -75,6 +83,7 @@ final class Onboarding3 : UIViewController {
 private extension Onboarding3 {
     private func setLayout() {
         self.view.backgroundColor = .white
+        self.title = ""
         self.view.addSubview(progressView)
         self.view.addSubview(nextBtn)
         
@@ -129,6 +138,21 @@ private extension Onboarding3 {
                 btn.setTitleColor(.black, for: .normal)
                 btn.backgroundColor = .lightGray
                 btn.titleLabel?.font = UIFont.systemFont(ofSize: 12, weight: .light)
+                btn.rx.tap.bind { [weak self] _ in
+                    guard let self = self else { return }
+                    // 버튼의 색상 변경
+                    btn.backgroundColor = .systemBlue
+                    btn.setTitleColor(.white, for: .normal)
+                    
+                    // 버튼의 타이틀 가져오기
+                    guard let buttonText = btn.titleLabel?.text else { return }
+                    
+                    // 해당 버튼의 인덱스에 해당하는 텍스트
+                    let text = QuestionFile[index]
+                    
+                    //서버로 전송
+                    answerQueue.append(OnboardingRequestModel(question: text, answer: buttonText))
+                }.disposed(by: disposeBag)
                 answerStack.addArrangedSubview(btn)
             }
             
@@ -158,6 +182,7 @@ private extension Onboarding3 {
     private func setBinding() {
         nextBtn.rx.tap.bind { [weak self] _ in
             guard let self = self else { return }
+            print(self.answerQueue)
 //            self.navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: <#T##Bool#>)
         }.disposed(by: disposeBag)
     }

@@ -47,6 +47,7 @@
 		E4B4216D2BF781AA0040D4CB /* QuestionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4216C2BF781AA0040D4CB /* QuestionFile.swift */; };
 		E4B4216F2BF7890C0040D4CB /* Onboarding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4216E2BF7890C0040D4CB /* Onboarding2.swift */; };
 		E4B421722BF789C70040D4CB /* Onboarding3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421712BF789C70040D4CB /* Onboarding3.swift */; };
+		E4B421772BF790AA0040D4CB /* OnboardingRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B421762BF790AA0040D4CB /* OnboardingRequestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		E4B4216C2BF781AA0040D4CB /* QuestionFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFile.swift; sourceTree = "<group>"; };
 		E4B4216E2BF7890C0040D4CB /* Onboarding2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2.swift; sourceTree = "<group>"; };
 		E4B421712BF789C70040D4CB /* Onboarding3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3.swift; sourceTree = "<group>"; };
+		E4B421762BF790AA0040D4CB /* OnboardingRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRequestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 		E4B1E77C2BF74B7B00ECADFA /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				E4B421732BF7906F0040D4CB /* Onboarding */,
 				E4B421532BF75D120040D4CB /* Career */,
 				E4B1E77D2BF74B7B00ECADFA /* Auth */,
 			);
@@ -372,6 +375,30 @@
 				E4B421712BF789C70040D4CB /* Onboarding3.swift */,
 			);
 			path = OnboardingList;
+			sourceTree = "<group>";
+		};
+		E4B421732BF7906F0040D4CB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E4B421752BF790790040D4CB /* Request */,
+				E4B421742BF790740040D4CB /* Response */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E4B421742BF790740040D4CB /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		E4B421752BF790790040D4CB /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E4B421762BF790AA0040D4CB /* OnboardingRequestModel.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,6 +557,7 @@
 				E4B421722BF789C70040D4CB /* Onboarding3.swift in Sources */,
 				E4B4215C2BF75E6C0040D4CB /* CareerViewController.swift in Sources */,
 				E4B421632BF770DE0040D4CB /* CareerServerResponseModel.swift in Sources */,
+				E4B421772BF790AA0040D4CB /* OnboardingRequestModel.swift in Sources */,
 				E4B421612BF7665E0040D4CB /* APIKEY.swift in Sources */,
 				E4B1E7C32BF74DAA00ECADFA /* DocumentViewController.swift in Sources */,
 				E4B421522BF75B860040D4CB /* CareerNetwork.swift in Sources */,
